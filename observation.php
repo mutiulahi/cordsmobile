@@ -33,7 +33,8 @@
                 </div>
             </div>
         </div>
-        <section class="a-call contact">
+        <section class="a-call">
+            <h1>Call To Action</h1>
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -42,33 +43,30 @@
                             <div class="overlay"></div>
                             <div class="content">
                                 <div class="inner">
-                                <!-- controller/authController.php -->
-                                    <p class="desc desc-a-call">Register</p>
-                                    <h3>Register here to have access to our services</h3>
-                                    <form action="#" method="post" id="commentform" class="comment-form">
+                                    <p class="desc desc-a-call">Request A Call</p>
+                                    <h3>You Can Easily
+                                        Get A Call Back.</h3>
+                                    <form action="#" method="post" id="commentform" class="comment-form" novalidate="novalidate">
                                         <div class="text-wrap clearfix">
                                             <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="author" tabindex="1" placeholder="Enter your Name...." size="32">
+                                                <input type="text" id="author" class="tb-my-input" name="author" tabindex="1" placeholder="Name:" value="" size="32" aria-required="true">
                                             </fieldset>
                                             <fieldset class="email-wrap">
-                                                <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Enter your Email...."  size="32">
+                                                <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Email:" value="" size="32" aria-required="true">
                                             </fieldset>
+                                            <fieldset class="phone-wrap">
+                                                <input type="text" id="phone" class="tb-my-input" name="Phone" tabindex="1" placeholder="Phone:" value="" size="32" aria-required="true">
                                             </fieldset>
-                                            <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="author" tabindex="1" placeholder="Enter your Phone Number...."  size="32" required="true">
+                                            <fieldset class="Address-wrap">
+                                                <input type="text" id="Address" class="tb-my-input" name="Address" tabindex="2" placeholder="Address:" value="" size="32" aria-required="true">
                                             </fieldset>
-                                            </fieldset>
-                                            <fieldset class="select">
-                                                <select name="" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; border-radius: 5px;">
-                                                        <option value="">Enter Transformal Location</option>
-                                                        <option value="">come</option>
-                                                        <option value="">Go</option>
-                                                </select>
-                                            </fieldset>
-                                            
                                         </div>
+                                        <fieldset class="message-wrap">
+                                            <textarea id="comment-message" placeholder="Message..."></textarea>
+                                        </fieldset>
                                         <p class="form-submit">
-                                            <button name="register" class="font-style linear-color border-corner submit"> Submit Now</button>
+                                            <button class="font-style linear-color border-corner submit"> Submit
+                                                Now</button>
                                         </p>
                                     </form>
                                 </div>
@@ -78,6 +76,7 @@
                 </div>
             </div>
         </section>
+
         <section class="map">
             <iframe class="map-content" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
             <div class="container">
