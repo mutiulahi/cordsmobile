@@ -482,7 +482,8 @@ textarea {
 }
 
 input,
-textarea {
+textarea, 
+select {
     font-size: 1em;
     max-width: 100%;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0),

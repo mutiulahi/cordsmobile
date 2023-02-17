@@ -117,10 +117,10 @@
                             <!-- <img src="assets/icon/icon-prochudure2.png" alt="image"> -->
                             <!-- </div> -->
                             <div class="content-prochudure">
-                                <h5><a href="#">Complaint</a></h5>
+                                <h5><a href="complaint.php">Complaint</a></h5>
                                 <p>Make complaint on the problem on your power status</p>
                                 <hr>
-                                <a href="#" class="btn btn-success">Subscribe</a>
+                                <a href="complaint.php" class="btn btn-success">Subscribe</a>
                             </div>
                         </div>
                     </div>
@@ -131,10 +131,10 @@
                             <!-- <img src="assets/icon/icon-prochudure3.png" alt="image"> -->
                             <!-- </div> -->
                             <div class="content-prochudure">
-                                <h5><a href="#">Observations</a></h5>
+                                <h5><a href="observation.php">Observations</a></h5>
                                 <p>Make a suggestion on what you need in your area.</p>
                                 <hr>
-                                <a href="#" class="btn btn-success">Subscribe</a>
+                                <a href="obser.php" class="btn btn-success">Subscribe</a>
                             </div>
                         </div>
                     </div>
