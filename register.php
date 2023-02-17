@@ -53,12 +53,12 @@
                                                 <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Location:" value="" size="32" aria-required="true">
                                             </fieldset>
                                             <fieldset>
-                                                <select name="" id="" class="tb-my-input"  >
-                                                    <option value="">select the location of your choice</option>
-                                                    <option value="offa">offa</option>
+                                                <select name="" id="" class="tb-my-input">
                                                     <option value=""></option>
                                                 </select>
                                             </fieldset>
+                                            
+                                            
                                         </div>
                                         <p class="form-submit">
                                             <button class="font-style linear-color border-corner submit"> Submit
