@@ -34,7 +34,7 @@
                                             </div>
 
                                             <div class="button-slider">
-                                                <a class="button-header border-corner" href="servicedetail.html">Join Us</a>
+                                                <a class="button-header border-corner" href="register.php">Join Us</a>
                                             </div>
 
                                         </div>
@@ -51,7 +51,7 @@
                                             </div>
 
                                             <div class="button-slider">
-                                                <a class="button-header border-corner" href="servicedetail.html"> Register</a>
+                                                <a class="button-header border-corner" href="register.php"> Register</a>
                                             </div>
 
                                         </div>
@@ -68,7 +68,7 @@
                                             </div>
 
                                             <div class="button-slider">
-                                                <a class="button-header border-corner" href="servicedetail.html"> Login</a>
+                                                <a class="button-header border-corner" href="login.php"> Login</a>
                                             </div>
 
                                         </div>
@@ -103,10 +103,10 @@
                     <div class="col-xl-4 col-lg-4 col-md-4">
                         <div class="wrap-prochudure">
                             <div class="content-prochudure ">
-                                <h5><a href="#">Power Update</a></h5>
+                                <h5><a href="register.php">Power Update</a></h5>
                                 <p>Get a real time power status of your area.</p>
                                 <hr>
-                                <a href="#" class="btn btn-success">Subscribe</a>
+                                <a href="register.php" class="btn btn-success">Subscribe</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                                 <h5><a href="observation.php">Observations</a></h5>
                                 <p>Make a suggestion on what you need in your area.</p>
                                 <hr>
-                                <a href="obser.php" class="btn btn-success">Subscribe</a>
+                                <a href="observation.php" class="btn btn-success">Subscribe</a>
                             </div>
                         </div>
                     </div>
