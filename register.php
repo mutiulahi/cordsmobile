@@ -14,9 +14,9 @@
 </head>
 
 <body class="location page header-fixed">
-    <div class="preload preload-container">
+    <!-- <div class="preload preload-container">
         <div class="preload-logo"></div>
-    </div>
+    </div> -->
     <div id="wrapper">
         <?php include 'layout/header.php'; ?>
         <div class="page-title parallax parallax1 position-relative clearfix">
