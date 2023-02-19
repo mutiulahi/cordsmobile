@@ -14,9 +14,9 @@
 </head>
 
 <body class="counter-scroll home1 home header-fixed">
-    <div class="preload preload-container">
+    <!-- <div class="preload preload-container">
         <div class="preload-logo"></div>
-    </div>
+    </div> -->
     <div id="wrapper">
         <?php include 'layout/header.php'; ?>
         <section class="slider">
