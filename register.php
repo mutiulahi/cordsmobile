@@ -45,21 +45,21 @@
                                 <!-- controller/authController.php -->
                                     <p class="desc desc-a-call">Register</p>
                                     <h3>Register here to have access to our services</h3>
-                                    <form action="#" method="post" id="commentform" class="comment-form">
+                                    <form action="controller/authController.php" method="post" id="commentform" class="comment-form">
                                         <div class="text-wrap clearfix">
                                             <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="author" tabindex="1" placeholder="Enter your Name...." size="32">
+                                                <input type="text" class="tb-my-input" name="fullname" tabindex="1" placeholder="Enter your Name...." size="32">
                                             </fieldset>
                                             <fieldset class="email-wrap">
                                                 <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Enter your Email...."  size="32">
                                             </fieldset>
                                             </fieldset>
                                             <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="author" tabindex="1" placeholder="Enter your Phone Number...."  size="32" required="true">
+                                                <input type="text" class="tb-my-input" name="phone" tabindex="1" placeholder="Enter your Phone Number...."  size="32" required="true">
                                             </fieldset>
                                             </fieldset>
                                             <fieldset class="select">
-                                                <select name="" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; border-radius: 5px;">
+                                                <select name="location" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; border-radius: 5px;" require='true'>
                                                         <option value="">Enter Transformal Location</option>
                                                         <option value="">come</option>
                                                         <option value="">Go</option>
