@@ -24,10 +24,10 @@
             <div class="container">
                 <div class="breadcrumbs position-relative">
                     <div class="breadcrumbs-wrap">
-                        <h1 class="title">Register</h1>
+                        <h1 class="title">Observation</h1>
                         <ul class="breadcrumbs-inner">
-                            <li class="font"><a href="index.html" id="font">Home</a></li>
-                            <li><span>Register Your Self</span></li>
+                            <li class="font"><a href="index.php" id="font">Home</a></li>
+                            <li><span>Observation</span></li>
                         </ul>
                     </div>
                 </div>
@@ -253,7 +253,5 @@
     <script src="assets/js/countto.js"></script>
 </body>
 
-
-<!-- Mirrored from themesflat.co/html/soffets/location.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 02:49:39 GMT -->
 
 </html>
