@@ -1,7 +1,7 @@
 <?php
 
-
-if(isset($_POST['register'])) {
+if(isset($_POST['register'])){
+    
     // $unique_id = 'COMD';
 
 
