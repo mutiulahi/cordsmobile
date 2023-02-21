@@ -58,7 +58,7 @@
                                                 <input type="text" id="phone" class="tb-my-input" name="Phone" tabindex="1" placeholder="Phone:" value="" size="32" aria-required="true">
                                             </fieldset>
                                             <fieldset class="Address-wrap">
-                                                <input type="text" id="Address" class="tb-my-input" name="Address" tabindex="2" placeholder="Address:" value="" size="32" aria-required="true">
+                                                <input type="text" id="Address" class="tb-my-input" name="location" tabindex="2" placeholder="Location:" value="" size="32" aria-required="true">
                                             </fieldset>
                                         </div>
                                         <fieldset class="message-wrap">
