@@ -26,7 +26,7 @@
                     <div class="breadcrumbs-wrap">
                         <h1 class="title">Register</h1>
                         <ul class="breadcrumbs-inner">
-                            <li class="font"><a href="index.html" id="font">Home</a></li>
+                            <li class="font"><a href="index.php" id="font">Home</a></li>
                             <li><span>Register Your Self</span></li>
                         </ul>
                     </div>
