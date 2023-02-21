@@ -59,8 +59,8 @@
                                             </fieldset>
                                             </fieldset>
                                             <fieldset class="select">
-                                                <select name="location" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; border-radius: 5px;" require='true'>
-                                                        <option value="">Enter transformer location</option>
+                                                <select name="location" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:20px; border-radius: 5px;" require='true'>
+                                                        <option value="">Select your Transformer Location</option>
                                                         <option value="Come">come</option>
                                                         <option value="Go">Go</option>
                                                 </select>
