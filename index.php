@@ -68,7 +68,7 @@
                                             </div>
 
                                             <div class="button-slider">
-                                                <a class="button-header border-corner" href="register.php"> CHeck in</a>
+                                                <a class="button-header border-corner" href="register.php"> Check in</a>
                                             </div>
 
                                         </div>
