@@ -18,7 +18,7 @@
         <div class="preload-logo"></div>
     </div> -->
     <div id="wrapper">
-        <?php include 'layout/header.php'; ?>
+        <?php include 'layout/header.php';?>
         <section class="slider">
             <div class="container-fluid">
                 <div class="row">

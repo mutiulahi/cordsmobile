@@ -17,8 +17,10 @@
     <!-- <div class="preload preload-container">
         <div class="preload-logo"></div>
     </div> -->
-    <div id="wrapper">
-        <?php include 'layout/header.php'; ?>
+    <div id="wrapper"> 
+        <?php
+        require_once "layout/header.inc.php";
+    ?>
         <div class="page-title parallax parallax1 position-relative clearfix">
             <div class="section-overlay"></div>
             <div class="container">
@@ -27,7 +29,7 @@
                         <h1 class="title">Register</h1>
                         <ul class="breadcrumbs-inner">
                             <li class="font"><a href="index.html" id="font">Home</a></li>
-                            <li><span>Register Your Self</span></li>
+                            <li><span>Registeration</span></li>
                         </ul>
                     </div>
                 </div>
