@@ -68,7 +68,7 @@
                                             </div>
 
                                             <div class="button-slider">
-                                                <a class="button-header border-corner" href="login.php"> Login</a>
+                                                <a class="button-header border-corner" href="observation.php"> Check in</a>
                                             </div>
 
                                         </div>
@@ -117,19 +117,16 @@
                             <!-- <img src="assets/icon/icon-prochudure2.png" alt="image"> -->
                             <!-- </div> -->
                             <div class="content-prochudure">
-                                <h5><a href="complaint.php">Complaint</a></h5>
+                                <h5><a href="register.php">Complaint</a></h5>
                                 <p>Make complaint on the problem on your power status</p>
                                 <hr>
-                                <a href="complaint.php" class="btn btn-success">Subscribe</a>
+                                <a href="register.php" class="btn btn-success">Subscribe</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xl-4 col-lg-4 col-md-4">
                         <div class="wrap-prochudure style-prochudure2">
-                            <!-- <div class="icon-prochudure style-prochudure"> -->
-                            <!-- <img src="assets/icon/icon-prochudure3.png" alt="image"> -->
-                            <!-- </div> -->
                             <div class="content-prochudure">
                                 <h5><a href="observation.php">Observations</a></h5>
                                 <p>Make a suggestion on what you need in your area.</p>

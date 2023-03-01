@@ -26,10 +26,15 @@
             <div class="container">
                 <div class="breadcrumbs position-relative">
                     <div class="breadcrumbs-wrap">
-                        <h1 class="title">Register</h1>
+                        <h1 class="title">Observation</h1>
                         <ul class="breadcrumbs-inner">
+<<<<<<< HEAD
                             <li class="font"><a href="index.html" id="font">Home</a></li>
                             <li><span>Registeration</span></li>
+=======
+                            <li class="font"><a href="index.php" id="font">Home</a></li>
+                            <li><span>Observation</span></li>
+>>>>>>> 8d18e907e51c755d947cede7040d37f710ae4012
                         </ul>
                     </div>
                 </div>
@@ -60,7 +65,7 @@
                                                 <input type="text" id="phone" class="tb-my-input" name="Phone" tabindex="1" placeholder="Phone:" value="" size="32" aria-required="true">
                                             </fieldset>
                                             <fieldset class="Address-wrap">
-                                                <input type="text" id="Address" class="tb-my-input" name="Address" tabindex="2" placeholder="Address:" value="" size="32" aria-required="true">
+                                                <input type="text" id="Address" class="tb-my-input" name="location" tabindex="2" placeholder="Location:" value="" size="32" aria-required="true">
                                             </fieldset>
                                         </div>
                                         <fieldset class="message-wrap">
@@ -255,7 +260,5 @@
     <script src="assets/js/countto.js"></script>
 </body>
 
-
-<!-- Mirrored from themesflat.co/html/soffets/location.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Feb 2023 02:49:39 GMT -->
 
 </html>

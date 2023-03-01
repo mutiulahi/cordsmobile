@@ -26,7 +26,7 @@
                     <div class="breadcrumbs-wrap">
                         <h1 class="title">Register</h1>
                         <ul class="breadcrumbs-inner">
-                            <li class="font"><a href="index.html" id="font">Home</a></li>
+                            <li class="font"><a href="index.php" id="font">Home</a></li>
                             <li><span>Register Your Self</span></li>
                         </ul>
                     </div>
@@ -59,8 +59,8 @@
                                             </fieldset>
                                             </fieldset>
                                             <fieldset class="select">
-                                                <select name="location" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; border-radius: 5px;" require='true'>
-                                                        <option value="">Enter Transformal Location</option>
+                                                <select name="location" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; padding-left:25px; border-radius: 5px;" require='true'>
+                                                        <option value="">Select your Transformer Location</option>
                                                         <option value="Come">come</option>
                                                         <option value="Go">Go</option>
                                                 </select>
