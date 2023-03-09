@@ -113,9 +113,6 @@
 
                     <div class="col-xl-4 col-lg-4 col-md-4">
                         <div class="wrap-prochudure style-prochudure">
-                            <!-- <div class="icon-prochudure style-prochudure"> -->
-                            <!-- <img src="assets/icon/icon-prochudure2.png" alt="image"> -->
-                            <!-- </div> -->
                             <div class="content-prochudure">
                                 <h5><a href="register.php">Complaint</a></h5>
                                 <p>Make complaint on the problem on your power status</p>

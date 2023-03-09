@@ -12,15 +12,45 @@
     <link rel="shortcut icon" href="assets/icon/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/icon/icon.png">
     <style>
-        .btn-btn{
-            background:rgba(0, 200, 0, 0.7);
-            border:none;
-            padding:10px 12px;
+
+        .me-center a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:rgba(0, 200, 0, 0.7);
+        }
+        .btn-me {
+            color: white;
+            font-size: 16px;
+            padding: 10px 12px;
+            background-color: rgba(0, 200, 0, 0.7);
         }
 
-        .btn-btn a{
-            color:white;
-            font-size:16px;
+        .btn-me:hover {
+            color: white;
+            font-size: 16px;
+            padding: 10px 12px;
+            background-color: rgba(0, 200, 0, 1);
+            transition: 0.5s ease-in-out;
+        }
+        hr {
+            width: 80%;
+        }
+
+        .text-me {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba(0, 200, 0, 10);
+            text-align: center;
+        }
+        .card-me {
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
+        }
+        .card-me:hover {
+            border: 1.5px solid rgba(0, 200, 0, 0.7);
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
         }
     </style>
 </head>
@@ -30,68 +60,55 @@
         <div class="preload-logo"></div>
     </div> -->
     <div id="wrapper">
-    <?php
+        <?php
         require_once "layout/header.inc.php";
-    ?>
+        ?>
 
 
-    <div class="row">
-    <div class="col-xl-4 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xl font-weight-bold text-success text-uppercase mb-4">
-                        Click below botton to have access to Status room</div>
-                        <div class="h3 mb-0 mt-5 font-weight-bold text-gray-800 btn btn-success btn-btn" style="margin-left:30%">
-                            <a class="button-header border-corner text-center" href="login.php">Status</a>
+        <div class="row" style="padding: 50px;">
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2 card-me">
+                    <div class="card-body">
+                        <div class="row no-gutters ">
+                            <div class="col mr-2 align-item-center me-center">
+                                <div class="text-me">
+                                    Click below botton to have access to Status room</div><br>
+                                <hr>
+                                <a href="#" class="btn text-white btn-me"> Status </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2 card-me">
+                    <div class="card-body">
+                        <div class="row no-gutters ">
+                            <div class="col mr-2 align-item-center me-center">
+                                <div class="text-me">
+                                    Click below botton to have access to observation room</div><br>
+                                <hr>
+                                <a href="#" class="btn text-white btn-me"> Observation </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2 card-me">
+                    <div class="card-body">
+                        <div class="row no-gutters ">
+                            <div class="col mr-2 align-item-center me-center">
+                                <div class="text-me">
+                                    Click below botton to have access to complaints room</div><br>
+                                <hr>
+                                <a href="#" class="btn text-white btn-me"> Complaint </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-xl-4 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xl font-weight-bold text-success text-uppercase mb-4">
-                        Click below botton to have access to observation room</div>
-                        <div class="h3 mb-0 mt-5 font-weight-bold text-gray-800 btn btn-success btn-btn" style="margin-left:30%">
-                            <a class="button-header border-corner text-center" href="observation.php">Observation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-4 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xl font-weight-bold text-success text-uppercase mb-4">
-                            Click below botton to have access to complaints room</div>
-                        <div class="h3 mb-0 mt-5 font-weight-bold text-gray-800 btn btn-success btn-btn" style="margin-left:30%">
-                            <a class="button-header border-corner" href="complaint.php">Complaints</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-        <!-- <div id="bottom" class="bottom-type1 position-relative" style="background-color:rgba(0, 250, 0, 0.5);" >
-            <div class="container">
-                <div class="bottom-wrap text-center">
-                    <div id="copyright">
-                        <a href="#" style="color:black;">Copyright © 2020 Themesflat </a><span class="license" style="color:black;"> All Rights
-                            Reserved</span>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 
     <a id="scroll-top"></a>
