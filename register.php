@@ -63,7 +63,12 @@
                                                         <option value="Go">Go</option>
                                                 </select>
                                             </fieldset>
-                                            
+                                            <fieldset class="email-wrap">
+                                                <input type="password" id="email" class="tb-my-input" name="password" tabindex="2" placeholder="Enter your Password"  size="32">
+                                            </fieldset>
+                                            <fieldset class="name-wrap" style="padding-left:25px;">
+                                                <input type="password" class="tb-my-input" name="Rpassword" tabindex="1" placeholder="Re-enter your password"  size="32" required="true">
+                                            </fieldset>
                                         </div>
                                         <p class="form-submit">
                                             <button name="register" class="font-style linear-color border-corner submit"> Submit Now</button>
