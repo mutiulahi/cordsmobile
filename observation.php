@@ -55,10 +55,10 @@
                                                 <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Email:" value="" size="32" aria-required="true">
                                             </fieldset>
                                             <fieldset class="phone-wrap">
-                                                <input type="text" id="phone" class="tb-my-input" name="Phone" tabindex="1" placeholder="Phone:" value="" size="32" aria-required="true">
+                                                <input type="text" id="phone" class="tb-my-input" name="Phone" tabindex="1" placeholder="Phone:" value="" size="32" aria-required="true" >
                                             </fieldset>
                                             <fieldset class="Address-wrap">
-                                                <input type="text" id="Address" class="tb-my-input" name="location" tabindex="2" placeholder="Location:" value="" size="32" aria-required="true">
+                                                <input type="text" id="Address" class="tb-my-input" name="location" tabindex="2" placeholder="Location:" value="" size="32" aria-required="true" required>
                                             </fieldset>
                                         </div>
                                         <fieldset class="message-wrap">
