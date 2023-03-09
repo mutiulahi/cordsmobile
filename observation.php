@@ -17,8 +17,10 @@
     <!-- <div class="preload preload-container">
         <div class="preload-logo"></div>
     </div> -->
-    <div id="wrapper">
-        <?php include 'layout/header.php'; ?>
+    <div id="wrapper"> 
+        <?php
+        require_once "layout/header.inc.php";
+    ?>
         <div class="page-title parallax parallax1 position-relative clearfix">
             <div class="section-overlay"></div>
             <div class="container">
@@ -26,8 +28,13 @@
                     <div class="breadcrumbs-wrap">
                         <h1 class="title">Observation</h1>
                         <ul class="breadcrumbs-inner">
+<<<<<<< HEAD
+                            <li class="font"><a href="index.html" id="font">Home</a></li>
+                            <li><span>Registeration</span></li>
+=======
                             <li class="font"><a href="index.php" id="font">Home</a></li>
                             <li><span>Observation</span></li>
+>>>>>>> 8d18e907e51c755d947cede7040d37f710ae4012
                         </ul>
                     </div>
                 </div>

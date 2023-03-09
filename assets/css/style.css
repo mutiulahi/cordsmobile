@@ -1034,7 +1034,6 @@ h6 a {
 }
 
 #main-nav-top>ul>li.menu-item-has-children>a::after {
-    content: "\f078";
     font-family: 'Font Awesome 5 Pro';
     color: #59606d;
     font-size: 10px;
@@ -1233,7 +1232,6 @@ h6 a {
 
 #mainnav .menu .list a::after {
     position: absolute;
-    content: "\f067";
     font-family: "Font Awesome 5 Pro";
     font-size: 10px;
     top: 0;
@@ -1358,7 +1356,6 @@ h6 a {
 
 
 #main-nav>ul>li.menu-item-has-children>a::after {
-    content: "\f067";
     font-family: 'Font Awesome 5 Pro';
     color: #08ed17;
     font-size: 11px;
@@ -1527,11 +1524,9 @@ h6 a {
 
 #main-nav-mobi .menu-item-has-children .arrow:before {
     font-family: "Font Awesome 5 Pro";
-    content: "\f107";
 }
 #main-nav-mobi .list .arrow:before {
     font-family: "Font Awesome 5 Pro";
-    content: "\f107";
 }
 #main-nav-mobi .list .arrow {
     -webkit-transition: all 0.3s ease;
