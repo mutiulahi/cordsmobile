@@ -53,10 +53,8 @@
                                             <fieldset class="email-wrap">
                                                 <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Enter your Email...."  size="32">
                                             </fieldset>
-                                            </fieldset>
                                             <fieldset class="name-wrap">
                                                 <input type="text" class="tb-my-input" name="phone" tabindex="1" placeholder="Enter your Phone Number...."  size="32" required="true">
-                                            </fieldset>
                                             </fieldset>
                                             <fieldset class="select">
                                                 <select name="location" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; padding-left:25px; border-radius: 5px;" require='true'>
@@ -65,7 +63,12 @@
                                                         <option value="Go">Go</option>
                                                 </select>
                                             </fieldset>
-                                            
+                                            <fieldset class="email-wrap">
+                                                <input type="password" id="email" class="tb-my-input" name="password" tabindex="2" placeholder="Enter your Password"  size="32">
+                                            </fieldset>
+                                            <fieldset class="name-wrap" style="padding-left:25px;">
+                                                <input type="password" class="tb-my-input" name="Rpassword" tabindex="1" placeholder="Re-enter your Password"  size="32" required="true">
+                                            </fieldset>
                                         </div>
                                         <p class="form-submit">
                                             <button name="register" class="font-style linear-color border-corner submit"> Submit Now</button>
