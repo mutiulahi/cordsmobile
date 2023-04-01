@@ -34,12 +34,11 @@
                     </li>
                     <li class="list">
                         <a href="#">Company</a>
-                        <span class="arrow"></span>
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                             <li><a href="">About</a></li>
                             <li><a href="">Core Values</a></li>
                             <li><a href="">Why Choose Us</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
 
                     <li class="list">

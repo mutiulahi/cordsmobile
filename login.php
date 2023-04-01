@@ -24,10 +24,10 @@
             <div class="container">
                 <div class="breadcrumbs position-relative">
                     <div class="breadcrumbs-wrap">
-                        <h1 class="title">Register</h1>
+                        <h1 class="title">Logiin</h1>
                         <ul class="breadcrumbs-inner">
                             <li class="font"><a href="index.php" id="font">Home</a></li>
-                            <li><span>Register Your Self</span></li>
+                            <li><span>Login</span></li>
                         </ul>
                     </div>
                 </div>
@@ -43,35 +43,24 @@
                             <div class="content">
                                 <div class="inner">
                                 <!-- controller/authController.php -->
-                                    <p class="desc desc-a-call">Register</p>
-                                    <h3>Register here to have access to our services</h3>
+                                    <p class="desc desc-a-call">Login</p>
+                                    <h3>Login page</h3>
                                     <form action="controller/registerController.php" method="post" id="commentform" class="comment-form">
                                         <div class="text-wrap clearfix">
                                             <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="fullname" tabindex="1" placeholder="Enter your Name...." size="32">
-                                            </fieldset>
-                                            <fieldset class="email-wrap">
-                                                <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Enter your Email...."  size="32">
+                                                <input type="text" class="tb-my-input" name="username" tabindex="1" placeholder="Enter your Username...." size="200">
                                             </fieldset>
                                             <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="phone" tabindex="1" placeholder="Enter your Phone Number...."  size="32">
-                                            </fieldset>
-                                            <fieldset class="select">
-                                                <select name="location" id="" style="background:inherit; border:solid whitesmoke 1px; color:white; padding:16px; padding-left:25px; border-radius: 5px;">
-                                                        <option value="">Select your Transformer Location...</option>
-                                                        <option value="Come">come</option>
-                                                        <option value="Go">Go</option>
-                                                </select>
-                                            </fieldset>
-                                            <fieldset class="name-wrap">
-                                                <input type="password" class="tb-my-input" name="password" tabindex="2" placeholder="Enter your Password"  size="32">
-                                            </fieldset>
-                                            <fieldset class="email-wrap" style="padding-left:25px;">
-                                                <input type="password" class="tb-my-input" name="Rpassword" tabindex="1" placeholder="Re-enter your password"  size="32">
+                                                <input type="text" class="tb-my-input" name="username" tabindex="1" placeholder="Enter your Username...." size="32">
                                             </fieldset>
                                         </div>
+                                        <!-- <div class="text-wrap clearfix">
+                                            <fieldset class="">
+                                                <input type="password"  class="tb-my-input" name="password" tabindex="2" placeholder="Enter your Password...."  size="32">
+                                            </fieldset>
+                                        </div> -->
                                         <p class="form-submit">
-                                            <button name="register" class="font-style linear-color border-corner submit"> Submit Now</button>
+                                            <button name="register" class="font-style linear-color border-corner submit"> Login Now</button>
                                         </p>
                                     </form>
                                 </div>

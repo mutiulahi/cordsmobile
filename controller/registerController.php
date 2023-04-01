@@ -19,6 +19,8 @@ if(isset($_POST['register'])){
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $location = $_POST['location'];
+    $password = $_POST['password'];
+    $rpassword = $_POST['Rpassword'];
 
     // including controller
 
@@ -26,7 +28,7 @@ if(isset($_POST['register'])){
     include 'authController.php';
 
     // Query an Empty field
-    if(emptySignup($fullname, $email, $phone, $location) == false){
+    if(emptySignup($fullname, $email, $phone, $location, $password, $rpassword) == false){
         header('location: ../register.php?error=emptyinput');
         exit();
     }
@@ -36,9 +38,12 @@ if(isset($_POST['register'])){
         exit();
     }
 
-    createuser($dbconnect, $fullname, $email, $phone, $location);
-}else{
-    header('location: ../register.php?error=notcheck');
-    exit();
+    if(PMatch($password, $rpassword) !== false){
+        // Password Do not match
+        header('location: ../register.php?error=Incorrectpassword');
+        exit();
+    }
+
+    createuser($dbconnect, $fullname, $email, $phone, $location, $password);
 }
 

@@ -1,9 +1,9 @@
 <?php
 $result;
 
-function emptySignup($fullname, $email, $phone, $location) {
+function emptySignup($fullname, $email, $phone, $location, $password, $rpassword) {
     
-    if(empty($fullname) || empty($email) || empty($phone) || empty($location)){
+    if(empty($fullname) || empty($email) || empty($phone) || empty($location) || empty($password) || empty($rpassword)){
         $result = false;
     }else{
         $result = true;
@@ -33,15 +33,29 @@ function userExit($dbconnect, $phone, $location) {
     mysqli_stmt_close($stmt_init);
 }
 
-function createuser($dbconnect, $fullname, $email, $phone, $location) {
-    $query = "INSERT INTO users (name, email, phone, location) VALUE (?, ?, ?, ?);";
+function PMatch($password, $rpassword){
+    
+    if($password !== $rpassword){
+        $result = true;
+    }else{
+        $result = false;
+    }
+
+    return $result;
+}
+
+
+function createuser($dbconnect, $fullname, $email, $phone, $location, $password) {
+    $query = "INSERT INTO users (`name`, email, phone, `location`, `password`) VALUE (?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($dbconnect);
     if(!mysqli_stmt_prepare($stmt, $query)) {
         header('location: ../register.php?error=stmtfailed');
         exit();
     }
 
-    mysqli_stmt_bind_param($stmt, 'ssss', $fullname, $email, $phone, $location);
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+
+    mysqli_stmt_bind_param($stmt, 'sssss', $fullname, $email, $phone, $location, $hash);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header('location: ../register.php?error=none');
