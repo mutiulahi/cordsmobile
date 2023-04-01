@@ -1,7 +1,10 @@
 <?php
+ // including controller
+
+ include '../database/connection.php';
+ include 'authController.php';
 
 if(isset($_POST['register'])){
-    
     // $unique_id = 'COMD';
 
 
@@ -20,12 +23,9 @@ if(isset($_POST['register'])){
     $phone = $_POST['phone'];
     $location = $_POST['location'];
     $password = $_POST['password'];
-    $rpassword = $_POST['Rpassword'];
+    $rpassword =$_POST['Rpassword'];
 
-    // including controller
-
-    include '../database/connection.php';
-    include 'authController.php';
+   
 
     // Query an Empty field
     if(emptySignup($fullname, $email, $phone, $location, $password, $rpassword) == false){
@@ -37,13 +37,25 @@ if(isset($_POST['register'])){
         header('location: ../register.php?error=userexit');
         exit();
     }
-
-    if(PMatch($password, $rpassword) !== false){
-        // Password Do not match
-        header('location: ../register.php?error=Incorrectpassword');
+    
+    if(PMatch($password,$rpassword) !== false){ 
+        header('location: ../register.php?error=incorrectPassword');
         exit();
     }
 
     createuser($dbconnect, $fullname, $email, $phone, $location, $password);
 }
 
+if(isset($_POST['login'])){
+
+    // declaration of variable 
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if(userOccur($dbconnect, $email, $password) !== false){
+        header('location: ../login.php?error=userOccur');
+        exit();
+}
+loginUser($dbconnect, $email, $password);
+}

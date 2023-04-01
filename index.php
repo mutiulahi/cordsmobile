@@ -94,7 +94,6 @@
                         <div class="wrap-title-prochudure">
                             <div class="content">
                                 <div class="inner">
-                                    <p class="desc">What We Do?</p>
                                     <h3>Our Services</h3>
                                 </div>
                             </div>
@@ -139,20 +138,16 @@
         <section class="FAQ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="faq-img">
-                            <img class="image-1" src="assets/images/faq/faq1.jpg" alt="image">
-                            <div class="image-top">
-                                <img class="image-2" src="assets/images/faq/faq2.jpg" alt="image">
+                    <div class="col-lg-6 col-md-12">                  
+                            <div class="image-top" style="margin-top: 9%;">
+                                <img class="image-2" src="assets/images/FAQS1.jpg" alt="image">
                             </div>
-                        </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="faq-content">
                             <div class="wrap-title-FAQ">
                                 <div class="content">
                                     <div class="inner style">
-                                        <p class="desc faq">FAQ</p>
                                         <h3>Frequiently Asked
                                             Question.</h3>
                                     </div>
@@ -188,7 +183,6 @@
         </section>
 
         <section class="a-call">
-            <h1>Call To Action</h1>
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -197,8 +191,7 @@
                             <div class="overlay"></div>
                             <div class="content">
                                 <div class="inner">
-                                    <p class="desc desc-a-call">Request A Call</p>
-                                    <h3>You Can Easily
+                                    <h3 style="margin-top: 5%;">You Can Easily
                                         Get A Call Back.</h3>
                                     <form action="#" method="post" id="commentform" class="comment-form" novalidate="novalidate">
                                         <div class="text-wrap clearfix">
@@ -235,7 +228,7 @@
             <div class="container">
                 <div class="bottom-wrap text-center">
                     <div id="copyright">
-                        <a href="#">Copyright © 2020 Themesflat </a><span class="license"> All Rights
+                        <a href="#">Copyright © 2023 CordsMobile </a><span class="license"> All Rights
                             Reserved</span>
                     </div>
                 </div>

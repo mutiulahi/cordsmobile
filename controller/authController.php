@@ -33,8 +33,7 @@ function userExit($dbconnect, $phone, $location) {
     mysqli_stmt_close($stmt_init);
 }
 
-function PMatch($password, $rpassword){
-    
+function PMatch($password,$rpassword){
     if($password !== $rpassword){
         $result = true;
     }else{
@@ -43,7 +42,6 @@ function PMatch($password, $rpassword){
 
     return $result;
 }
-
 
 function createuser($dbconnect, $fullname, $email, $phone, $location, $password) {
     $query = "INSERT INTO users (`name`, email, phone, `location`, `password`) VALUE (?, ?, ?, ?, ?);";
@@ -62,3 +60,32 @@ function createuser($dbconnect, $fullname, $email, $phone, $location, $password)
     exit();
 }
 
+function userOccur($dbconnect, $email, $password) {
+    $query = "SELECT * FROM users WHERE email = ? AND password = ?;";
+    $stmt_init = mysqli_stmt_init($dbconnect);
+    if(!mysqli_stmt_prepare($stmt_init, $query)) {
+        header('localhost: ../login.php?error=stmtfailed');
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt_init, 'ss', $email, $password);
+    mysqli_stmt_execute($stmt_init);
+    $getresult = mysqli_stmt_get_result($stmt_init);
+
+    if($row = mysqli_fetch_assoc($getresult)) {
+        return $row;
+    }else {
+        $result = false;
+        return $result;
+    }
+
+    mysqli_stmt_close($stmt_init);
+}
+function loginUser($dbconnect, $email, $password){
+    $existingUser = userExist($dbconnect, $email, $password);
+    if($existingUser !== false){
+        $_SESSION["email"] = $existingUser["email"];
+        $_SESSION["name"] = $existingUser["name"];
+        header("location: ../login.php?success=successful");
+}
+}

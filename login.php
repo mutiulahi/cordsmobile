@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="shortcut icon" href="assets/icon/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/icon/icon.png">
+
+    <style>
+       .text-wrap-container{
+            width:100%;
+       }
+    </style>
 </head>
 
 <body class="location page header-fixed">
@@ -19,21 +25,8 @@
     </div> -->
     <div id="wrapper">
         <?php include 'layout/header.php'; ?>
-        <div class="page-title parallax parallax1 position-relative clearfix">
-            <div class="section-overlay"></div>
-            <div class="container">
-                <div class="breadcrumbs position-relative">
-                    <div class="breadcrumbs-wrap">
-                        <h1 class="title">Logiin</h1>
-                        <ul class="breadcrumbs-inner">
-                            <li class="font"><a href="index.php" id="font">Home</a></li>
-                            <li><span>Login</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="a-call contact">
+        
+        <section class="a-call contact a-contact">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -43,24 +36,18 @@
                             <div class="content">
                                 <div class="inner">
                                 <!-- controller/authController.php -->
-                                    <p class="desc desc-a-call">Login</p>
-                                    <h3>Login page</h3>
+                                    <h3>Login here to have access to our services</h3>
                                     <form action="controller/registerController.php" method="post" id="commentform" class="comment-form">
-                                        <div class="text-wrap clearfix">
-                                            <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="username" tabindex="1" placeholder="Enter your Username...." size="200">
+                                        <div class="text-wrap clearfix text-wrap2" style="display:inline;">
+                                            <fieldset class="text-wrap-container" style="width:100%;">
+                                                <input type="email" id="email" class="" name="email" tabindex="2" placeholder="Enter your Email...."  size="32">
                                             </fieldset>
-                                            <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="username" tabindex="1" placeholder="Enter your Username...." size="32">
+                                            <fieldset class="" style="width:100%;">
+                                                <input type="password" id="email" class="" name="password" tabindex="2" placeholder="Enter your Password"  size="32">
                                             </fieldset>
                                         </div>
-                                        <!-- <div class="text-wrap clearfix">
-                                            <fieldset class="">
-                                                <input type="password"  class="tb-my-input" name="password" tabindex="2" placeholder="Enter your Password...."  size="32">
-                                            </fieldset>
-                                        </div> -->
                                         <p class="form-submit">
-                                            <button name="register" class="font-style linear-color border-corner submit"> Login Now</button>
+                                            <button name="login" class="font-style linear-color border-corner submit"> Login</button>
                                         </p>
                                     </form>
                                 </div>
@@ -70,163 +57,11 @@
                 </div>
             </div>
         </section>
-        <section class="map">
-            <iframe class="map-content" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="solution">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="wrap-icon">
-                            <div class="about-testimonial swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="image swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial1.png" alt="image">
-                                    </div>
-                                    <div class="image swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial2.png" alt="image">
-
-                                    </div>
-                                    <div class="image swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial3.png" alt="image">
-
-                                    </div>
-                                    <div class="image-style swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial4.png" alt="image">
-
-                                    </div>
-                                    <div class="image swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial1.png" alt="image">
-                                    </div>
-                                    <div class="image swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial2.png" alt="image">
-
-                                    </div>
-                                    <div class="image swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial3.png" alt="image">
-
-                                    </div>
-                                    <div class="image-style swiper-slide">
-                                        <img class="icon-testimonial" src="assets/icon/icon-testimonial4.png" alt="image">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer" class="footer footer-bg-1">
-            <div class="overlay"></div>
-            <div id="footer-widget" class="footer-widget-type1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4  col-md-6">
-                            <div class="mg-widget-mobi kcl-widget-title">
-                                <div class="wrap-soffets">
-                                    <div class="image-soffets">
-                                        <div class="image"><img src="assets/logo/logofooter.png" alt="image"></div>
-                                    </div>
-                                </div>
-                                <div class="title text-coler-footer">
-                                    <p>It uses a dictionary of over 20 Latin,
-                                        combined with a handful of model
-                                        structures to generate reasonable.
-                                        generated therefore always.</p>
-                                </div>
-                                <div class="hotline-soffets">
-                                    <div class="icon soffets"><span class="icon-phone-call"></span></div>
-                                    <div class="hotline soffets">
-                                        <p>+99 568 439 781 </p>
-                                    </div>
-                                </div>
-                                <div class="socials-list ">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4  col-md-6">
-                            <div class="mg-widget-mobi service-widget  kcl-widget-title-style">
-                                <h3 class="widget widget-title">Services.</h3>
-                                <div class="widget-services d-sm-flex text-coler-footer">
-                                    <ul class="one-half first ">
-                                        <li><a href="servicedetail.html">IT Management</a></li>
-                                        <li><a href="servicedetail.html">Cyber Security</a></li>
-                                        <li><a href="servicedetail.html">Cloud Computing</a></li>
-                                        <li><a href="servicedetail.html">IT Consulting</a></li>
-                                    </ul>
-                                </div>
-                                <h3 class="widget widget-title widget-title-style">Subscribe Now</h3>
-                                <form action="#" class="form-email btn-linear hv-linear-services">
-                                    <input type="text" class="email-here" placeholder="Email here">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-4  col-md-12">
-                            <div class="widget widget-latest widget-bg mg-widget-mobi kcl-widget-title-style">
-                                <h3 class="widget widget-title-latest">Latest News.</h3>
-                                <ul class="latest-news">
-                                    <li>
-                                        <div class="latest-image">
-                                            <img src="assets/images/image-footer/lastest1.jpg" alt="images">
-                                        </div>
-                                        <div class="latest-content">
-                                            <p class="latest-day latest">22.08.2020</p>
-                                            <h5 class="latest-title latest"><a href="#">Supply chain control is
-                                                    everything protect.</a>
-                                            </h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="latest-news">
-                                    <li>
-                                        <div class="latest-image">
-                                            <img src="assets/images/image-footer/lastest2.jpg" alt="images">
-                                        </div>
-                                        <div class="latest-content">
-                                            <p class="latest-day">22.08.2020</p>
-                                            <h5 class="latest-title"><a href="#">Supply chain control is everything
-                                                    protect.</a>
-                                            </h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="latest-news">
-                                    <li>
-                                        <div class="latest-image">
-                                            <img src="assets/images/image-footer/lastest3.jpg" alt="images">
-                                        </div>
-                                        <div class="latest-content">
-                                            <p class="latest-day">22.08.2020</p>
-                                            <h5 class="latest-title"><a href="#">Supply chain control is everything
-                                                    protect.</a>
-                                            </h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <div id="bottom" class="bottom-type1 position-relative">
             <div class="container">
                 <div class="bottom-wrap text-center">
                     <div id="copyright">
-                        <a href="#">Copyright © 2020 Themesflat </a><span class="license"> All Rights
+                        <a href="#">Copyright © 2023 CordsMobile </a><span class="license"> All Rights
                             Reserved</span>
                     </div>
                 </div>
