@@ -1,38 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- header top starts -->
+<?php include 'layout/header_top.php'; ?>
+<!-- // header top ends -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Cords Mobile Power Scheduling</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-    <link rel="shortcut icon" href="assets/icon/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/icon/icon.png">
-</head>
-
-<body class="location page header-fixed">
-    <!-- <div class="preload preload-container">
-        <div class="preload-logo"></div>
-    </div> -->
     <div id="wrapper">
         <?php include 'layout/header.php'; ?>
-        <!-- <div class="page-title parallax parallax1 position-relative clearfix">
-            <div class="section-overlay"></div>
-            <div class="container">
-                <div class="breadcrumbs position-relative">
-                    <div class="breadcrumbs-wrap">
-                        <h1 class="title">Register</h1>
-                        <ul class="breadcrumbs-inner">
-                            <li class="font"><a href="index.php" id="font">Home</a></li>
-                            <li><span>User Registeration Form</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <section class="a-call contact">
             <div class="overlay"></div>
             <div class="container">
@@ -53,7 +24,7 @@
                                                 <input type="email" id="email" class="tb-my-input" name="email" tabindex="2" placeholder="Enter your Email...."  size="32">
                                             </fieldset>
                                             <fieldset class="name-wrap">
-                                                <input type="text" class="tb-my-input" name="phone" tabindex="1" placeholder="Enter your Phone Number...."  size="32" required="true">
+                                                <input type="number" class="tb-my-input" name="phone" tabindex="1"  maxlength="11" placeholder="Enter your Phone Number...."  required="true">
                                             </fieldset>
                                             <fieldset class="select">
                                                 <select name="location" id="" style="background:rgba(33, 36, 33, 0.5); border:solid black 3px; color:white; padding:16px; padding-left:25px; border-radius: 5px;" require='true'>
@@ -61,12 +32,6 @@
                                                         <option value="Come">come</option>
                                                         <option value="Go">Go</option>
                                                 </select>
-                                            </fieldset>
-                                            <fieldset class="email-wrap">
-                                                <input type="password" id="email" class="tb-my-input" name="password" tabindex="2" placeholder="Enter your Password"  size="32">
-                                            </fieldset>
-                                            <fieldset class="name-wrap" style="padding-left:25px;">
-                                                <input type="password" class="tb-my-input" name="Rpassword" tabindex="1" placeholder="Re-enter your password"  size="32" required="true">
                                             </fieldset>
                                         </div>
                                         <p class="form-submit">
@@ -79,6 +44,7 @@
                     </div>
                 </div>
             </div>
+        </section>
         <div id="bottom" class="bottom-type1 position-relative">
             <div class="container">
                 <div class="bottom-wrap text-center">

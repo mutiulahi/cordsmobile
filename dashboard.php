@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION["email"])){
+    header("location: login.php?error=loginrequired");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,8 +69,6 @@
         <?php
         require_once "layout/header.inc.php";
         ?>
-
-
         <div class="row" style="padding: 50px;">
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-success shadow h-100 py-2 card-me">
@@ -74,7 +78,7 @@
                                 <div class="text-me">
                                     Click below botton to have access to Status room</div><br>
                                 <hr>
-                                <a href="#" class="btn text-white btn-me"> Status </a>
+                                <a href="status.php" class="btn text-white btn-me"> Status </a>
                             </div>
                         </div>
                     </div>
@@ -88,7 +92,7 @@
                                 <div class="text-me">
                                     Click below botton to have access to observation room</div><br>
                                 <hr>
-                                <a href="#" class="btn text-white btn-me"> Observation </a>
+                                <a href="observation.php" class="btn text-white btn-me"> Observation </a>
                             </div>
                         </div>
                     </div>
@@ -102,13 +106,13 @@
                                 <div class="text-me">
                                     Click below botton to have access to complaints room</div><br>
                                 <hr>
-                                <a href="#" class="btn text-white btn-me"> Complaint </a>
+                                <a href="complaint.php" class="btn text-white btn-me"> Complaint </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 
     <a id="scroll-top"></a>

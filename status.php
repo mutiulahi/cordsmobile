@@ -17,10 +17,10 @@ if(!isset($_SESSION["email"])){
             <div class="container">
                 <div class="breadcrumbs position-relative">
                     <div class="breadcrumbs-wrap">
-                        <h1 class="title">Complain Station</h1>
+                        <h1 class="title">Status Checker</h1>
                         <ul class="breadcrumbs-inner">
                             <li class="font"><a href="index.html" id="font">Home</a></li>
-                            <li><span >Complain</span></li>
+                            <li><span >Status</span></li>
                         </ul>
                     </div>
                 </div>
@@ -34,7 +34,8 @@ if(!isset($_SESSION["email"])){
                         <div class="wrap-title-solution style">
                             <div class="content">
                                 <div class="inner">
-                                    <button class="btn btn-success m-5 border-corner p-4" style="font-size:20px;" id="showHidden">Click Here to Complain</button>
+                                    <button class="btn btn-success m-5 border-corner p-4" style="font-size:20px;" id="showHidden">Click Here to View Status</button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -44,11 +45,11 @@ if(!isset($_SESSION["email"])){
                             <div class="">
                             <form action="controller/registerController.php" style="width:50%; margin:auto;" method="post">
                               <div>
-                                <input type="text" name="complain" value ="<?php if(isset($_SESSION["email"])){echo $_SESSION["email"];}?>" id="textHidden1" placeholder="Enter your Email Address" style="color:black" class="d-none" readonly>
+                                <input type="text" name="transformerID" id="textHidden1" placeholder="Enter your Transformer Location" style="color:black" class="d-none">
                               </div>
                               <br>
-                               <textarea name="message" id="textHidden2" cols="20" rows="15" placeholder="Enter your complain here!" style="color:black" class="d-none"></textarea>
-                               <input type="submit" value="Submit" name="complainButton" id="submitHidden" class="d-none mt-3">
+                               <textarea name="message" id="textHidden2" cols="20" rows="15" placeholder="Enter your status here!" style="color:black" class="d-none"></textarea>
+                               <input type="submit" value="Submit" name="statusButton" id="submitHidden" class="d-none mt-3">
                             </form>
                             </div>
                         </div>
@@ -86,11 +87,7 @@ if(!isset($_SESSION["email"])){
                 $("#textHidden1").removeClass("d-none");
                 $("#textHidden2").removeClass("d-none");
                 $("#submitHidden").removeClass("d-none");
-            });
-
-            $("#textHidden1").bind('cut copy paste', function(e){
-            e.preventDefault();
-            });
+            })
         });
     </script>
 </body>
